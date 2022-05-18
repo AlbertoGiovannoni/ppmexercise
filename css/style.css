@@ -207,14 +207,14 @@ nav a:visited {
 
 /*start content rules*/
 .main-content{
-    display: block;
+    display: inline-block;
     margin-left: 8.5%;
     margin-right: 8.5%;
 }
 
 .container-main{
     float: left;
-    height: 540px;
+    padding-bottom: 43px;
     border-bottom: double #4a4a4a;
 }
 
@@ -294,6 +294,7 @@ article.mid{
 
 footer{
     clear: both;
+    display: inline-block;
 }
 
 .footer-blurb{
@@ -316,6 +317,8 @@ footer{
 
 .link-box{
     margin-top: 38px;
+    font-size: 11px;
+    line-height: 12px;
 }
 
 .social a{
@@ -341,11 +344,7 @@ div.social{
     float: right;
 }
 
-.prisa{
-    height: 100px;
-    width: 200px;
-    float: right;
-}
+
 
 .container{
     height: 150px;
@@ -362,13 +361,28 @@ div.social{
     border-bottom: 5px solid #016ca2;
 }
 
+.prisa{
+    display: inline-block;
+    position:relative;
+    left: 80px;
+}
+
 button.prisa-button{
     border-radius: 0;
     padding: 5px 36px 5px 8px;
 }
-.logo-prisa a{
-    float: left;
+
+.logo-prisa h3{
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
 }
+
+#links{
+    padding-left: 0;
+    display: inline-block;
+}
+
 
 /* cambia dimensioni e spessore titoli e risistema prisa */
 
