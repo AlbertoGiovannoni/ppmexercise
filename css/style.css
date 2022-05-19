@@ -232,7 +232,7 @@ article a:visited{
     width: 54%;
 }
 
-.image{   
+.image{
      max-width: 100%;
     display: block;
     max-width: 100%;
@@ -262,7 +262,7 @@ article a.author{
     text-transform: uppercase;
 }
 
-.titlel1{
+h2 a{
     font-size: 30px;
     line-height: 32px;
     letter-spacing: -1px;
@@ -294,13 +294,14 @@ article.mid{
 
 footer{
     clear: both;
-    display: inline-block;
+    display: block;
 }
 
 .footer-blurb{
     display: block;
     margin-left: 8.5%;
     margin-right: 8.5%;
+    min-height: 150px;
 }
 
 #links li{
@@ -312,7 +313,7 @@ footer{
     color: #000;
     text-decoration: none;
     display: inline-block;
-    padding: 15px 15px 0 15px;
+    padding: 15px 15px 0 0;
 }
 
 .link-box{
@@ -344,10 +345,13 @@ div.social{
     float: right;
 }
 
-
-
-.container{
-    height: 150px;
+.right{
+    font-family: MarcinAntB,sans-serif;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 14px;
+    letter-spacing: -1px;
 }
 
 .arrow-up {
@@ -357,7 +361,7 @@ div.social{
     width: 0;
     height: 0;
     border-left: 5px solid transparent;
-    border-right: 5px solid transparent;    
+    border-right: 5px solid transparent;
     border-bottom: 5px solid #016ca2;
 }
 
