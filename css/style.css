@@ -2,6 +2,7 @@
 
 * {
     margin: 0;
+    padding: 0;
 }
 
 body {
@@ -29,24 +30,18 @@ button {
 
 /*start Header rules*/
 
-.head {
-    background-color: white;
-    height: 216px;
-    display: block;
-}
+
 
 .top {
-    position: relative;
     border-bottom: 1px solid #efefef;
+    margin: auto;
 }
 
 .main-top {
-    padding: 32px 30px 32px 26px;
-    margin: 0 90px 0 90px;
+    margin: 32px auto;    
+    max-width: 1208px;
 }
-/* button .country{
-    padding: 4px 80px 4px 5px;
-} */
+
 
 .info-bar {
     width: 98%;
@@ -56,6 +51,10 @@ button {
 #secondary-infobar {
     position: absolute;
     right: 0;
+}
+
+.usr-img{
+    display: none;
 }
 
 .sub {
@@ -173,19 +172,21 @@ button {
 .navbar {
     background-color: white;
     height: 43px;
+    padding: 0 22px 0 22px;
 }
+
 .container-nav {
-    font-family: MarcinAntB,sans-serif;
+    font-family: MarcinAntB, sans-serif;
     background-color: white;
-    margin-left: 8.5%;
-    margin-right: 8.5%;
+    margin: 0 auto;
+    max-width: 1208px;
     letter-spacing: .1px;
 }
 
-nav{
+nav {
     height: 43px;
     border-bottom: 1px solid #000;
-    padding: 0 4% 0 4%;
+    display: flex;
 }
 
 nav a {
@@ -197,93 +198,124 @@ nav a:link,
 nav a:visited {
     color: #000;
     text-decoration: none;
-    padding: 15px .38%;
+    margin: auto;
+}
+
+nav a {
     font-size: 11px;
     line-height: 13px;
-
 }
 
 /*end Navigation rules*/
 
 /*start content rules*/
-.main-content{
-    display: inline-block;
-    margin-left: 8.5%;
-    margin-right: 8.5%;
+.main-content {
+    max-width: 1208px;
+    margin: 0 auto;
 }
 
-.container-main{
+.container-main {
+    display: flex;
     float: left;
     padding-bottom: 43px;
+    padding: 0 22px 30px 22px;
     border-bottom: double #4a4a4a;
 }
 
 article a:link,
-article a:visited{
+article a:visited {
     color: #000;
     text-decoration: none;
 }
 
-.left-articles, .right-articles{
-    width: 23%;
+.left-articles,
+.right-articles {
+    width: 21%;
 }
 
-.middle-article{
+.left-articles {
+    padding-right: 20px;
+}
+
+.right-articles {
+    padding-left: 20px;
+}
+
+.middle-article {
     width: 54%;
 }
 
-.image{
-     max-width: 100%;
-    display: block;
+.image {
     max-width: 100%;
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.description{
+.image3{
+    display: none;
+}
+
+.description {
     text-align: right;
     color: gray;
     font-size: 12px;
     line-height: 18px;
 }
 
-.left-articles, .right-articles, .middle-article{
-    padding-top: 50px;
+.left-articles,
+.right-articles,
+.middle-article {
+    margin-top: 50px;
     float: left;
 }
 
-.article-info, article a.author{
+.article-info,
+article a.author {
     color: gray;
     font-size: 10px;
     line-height: 25px;
 }
 
-article a.author{
+article a.author {
     text-transform: uppercase;
 }
 
-h2 a{
+h2 a {
     font-size: 30px;
     line-height: 32px;
     letter-spacing: -1px;
     font-weight: 700;
 }
 
-.article-l1, .article-r1{
+h2 a.titler1,
+h2 a.titler2,
+h2 a.titlel2 {
+    font-size: 22px;
+}
+
+h2 a.titlel2 {
+    font-style: italic;
+}
+
+.article-l1,
+.article-r1 {
     padding-bottom: 18px;
     border-bottom: 1px solid #ebebeb;
     margin-bottom: 20px;
 }
 
-.mtext{
+.mtext {
     max-width: 560px;
     margin: auto;
 }
 
-article.mid{
-    max-width: 610px;
-    margin: auto;
-    border-left: 1px solid #ebebeb;
+article.mid {
+    padding: 0 24px;
+    border-right: 1px solid #ebebeb;
+}
+
+.left-articles {
     border-right: 1px solid #ebebeb;
 }
 
@@ -292,61 +324,62 @@ article.mid{
 
 /* start footer rules */
 
-footer{
+footer {
     clear: both;
-    display: block;
+    display: flex;
 }
 
-.footer-blurb{
-    display: block;
-    margin-left: 8.5%;
-    margin-right: 8.5%;
+.footer-blurb {
+    max-width: 1208px;
+    margin: 0 auto;
     min-height: 150px;
+    padding: 0 22px 0 22px;
+    margin-top: 20px;
 }
 
-#links li{
+#links li {
     float: left;
 }
 
 #links li a:link,
-#links li a:visited{
+#links li a:visited {
     color: #000;
     text-decoration: none;
     display: inline-block;
     padding: 15px 15px 0 0;
 }
 
-.link-box{
+.link-box {
     margin-top: 38px;
     font-size: 11px;
     line-height: 12px;
 }
 
-.social a{
+.social a {
     height: 19px;
     width: 19px;
     float: left;
     margin: 0 10px 0 10px;
 }
 
-.social a img{
+.social a img {
     max-width: 100%;
 
 }
 
-.copyright{
+.copyright {
     margin-top: 10px;
     float: left;
     height: 50px;
     width: 80%;
 }
 
-div.social{
+div.social {
     float: right;
 }
 
-.right{
-    font-family: MarcinAntB,sans-serif;
+.right {
+    font-family: MarcinAntB, sans-serif;
     color: #000;
     text-transform: uppercase;
     font-weight: 900;
@@ -365,29 +398,250 @@ div.social{
     border-bottom: 5px solid #016ca2;
 }
 
-.prisa{
+.prisa {
     display: inline-block;
-    position:relative;
+    position: relative;
     left: 80px;
+    top: 20px;
 }
 
-button.prisa-button{
+button.prisa-button {
     border-radius: 0;
     padding: 5px 36px 5px 8px;
 }
 
-.logo-prisa h3{
+.logo-prisa h3 {
     float: right;
     margin-top: 10px;
     margin-right: 20px;
 }
 
-#links{
+#links {
     padding-left: 0;
-    display: inline-block;
 }
 
-
-/* cambia dimensioni e spessore titoli e risistema prisa */
-
 /* end footer rules */
+
+/* start media 1000px rules */
+
+@media screen and (max-width: 1000px) {
+
+    .top{
+        margin: auto;
+        border-bottom: 1px solid #ebebeb;
+    }
+
+    .main-top{
+        max-width: 800px;
+    }
+
+    .container-nav {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .main-content {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .footer-blurb {
+        max-width: 800px;
+        margin: auto;
+        padding: 0 22px 0 22px;
+        margin: 0 22px 0 22px;
+        height: 350px;
+    }
+
+    nav a {
+        font-size: 8px;
+    }
+
+    .container-main {
+        display: block;
+        border-bottom: none;
+    }
+
+    .right-articles {
+        clear: both;
+        width: 100%;
+        display: flex;
+        padding-top: 30px;
+        margin-top: 30px;
+        border-top: 1px solid #ebebeb;
+    }
+
+    .article-r1{
+        width: 30%;
+        border-bottom: none;
+        border-right: 1px solid #ebebeb;
+    }
+
+    .article-r2{
+        width: 68%;
+    }
+
+    .image2{
+        float: right;
+        margin-right: 10px;
+    }
+
+    .text-r2{
+        width: 50%;
+        margin-left: 10px;
+    }
+
+    .middle-article {
+        border-right: none;
+        width: 67%;
+    }
+
+    article.mid {
+        border-right: none;
+        padding: 0 0 0 24px;
+    }
+
+    .left-articles {
+        width: 30%;
+    }
+
+    .copyright{
+        width: 100%;
+        height: 175px;
+        float: none;
+        border-bottom: 1px solid #000;
+        border-top: 1px solid #000;
+        padding-top: 30px;
+    }
+
+    .prisa{
+        clear: both;
+        margin: auto;
+        display: table;
+        left: 0;
+    }
+
+}
+
+/* end media 1000px rules */
+
+/* start mobile rules */
+
+@media screen and (max-width: 768px) {
+
+    .navbar{
+        display: none;
+    }
+
+    .log{
+        display: none;
+    }
+
+    .logo2{
+        display: none;
+    }
+
+    .select{
+        display: none;
+    }
+
+    .top{
+        height: 56px;
+        box-shadow: 0 2px 6px rgba(200, 200, 200, 0.6);
+    }
+
+    .main-top{
+        margin-top: 0;
+        padding-top: 5px
+    }
+
+    .container-logo{
+        padding-top: 0;
+    }
+
+    .hamburger{
+        top: 10px;
+        left: 20px;
+    }
+
+    #primary-infobar{
+        top: 40px;
+    }
+
+    #secondary-infobar{
+        top: 60px;
+    }
+
+    .usr-img{
+        display: block;
+        height: 18px;
+        width: 18px;
+        top: 0;
+    }
+
+    .tertiary-menu{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    .left-articles{
+        width: 100%;
+    }
+
+    .middle-article{
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .right-articles{
+        width: 100%;
+        display: block;
+        padding-left: 0;
+    }
+
+    .article-r1{
+        border-right: none;
+        width: 100%;
+        border-bottom: 1px solid #ebebeb;
+    }
+
+    .article-r2{
+        width: 100%;
+    }
+
+    .text-r2{
+        margin-left: 0;
+    }
+
+    article.mid{
+        padding: 0;
+    }
+
+    .mtext{
+        margin: 0;
+    }
+
+    .image{
+        display: none;
+    }
+
+    .image3{
+        max-width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .article-l2{
+    padding-bottom: 18px;
+    border-bottom: 1px solid #ebebeb;
+    }
+
+    .footer-blurb{
+        margin: 0;
+    }
+
+}
+
+/* end mobile rules */
